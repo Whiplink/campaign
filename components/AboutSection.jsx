@@ -23,7 +23,7 @@ const AboutSection = () => {
             </h1>
             <p className="mb-8 max-w-xl text-background lg:text-xl">
               United Camnortenyo working together towards accountable,
-              transparent and good governance for God's glory and honor.
+              transparent and good governance for God&apos;s glory and honor.
             </p>
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
               <Button asChild className="w-full sm:w-auto">
