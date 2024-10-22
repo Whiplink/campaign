@@ -4,7 +4,7 @@ export default function About() {
       <h1 className="font-bold text-6xl mb-10 text-background">Core Value</h1>
       <div className="bg-background py-24 px-4 md:px-6">
         <h2 className="italic text-4xl mb-8">SHOCK - CAMARINES NORTE</h2>
-        <p className="text-2xl max-w-3xl mx-auto text-left leading-10">
+        <p className="text-2xl max-w-3xl mx-auto text-center leading-10">
           <R>S</R>-ustainable agri-fishery, necological management, social
           welfare and need-based infrastructure development
           <br /> <R>H</R>-ealth services and Education (Improve medical

@@ -29,15 +29,14 @@ const Hero = () => {
             Join us on this journey to bring about meaningful progress.
           </p>
         </div>
-        <div className="mt-6 flex flex-col gap-4 sm:flex-row lg:mt-10">
+        {/* <div className="mt-6 flex flex-col gap-4 sm:flex-row lg:mt-10">
           <Button size={"lg"} className="w-full md:w-auto">
             Primary
           </Button>
           <Button size={"lg"} variant={"outline"} className="w-full md:w-auto">
-            {/* <PlayCircle className="mr-2 size-4" /> */}
             Secondary
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

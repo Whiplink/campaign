@@ -10,7 +10,7 @@ export default function Footer() {
             <Link href="/">
               <p className="font-extrabold">Home</p>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <p className="font-extrabold">About</p>
             </Link>
             <Link href="/">

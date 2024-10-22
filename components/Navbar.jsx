@@ -16,7 +16,7 @@ export default function Navbar() {
           <h1 className="font-extrabold text-2xl">Logo</h1>
           <Button
             onClick={() => setIsOpen(true)}
-            className="sm:hidden"
+            className="sm:hidden bg-transparent"
             variant="outline"
             size="icon"
           >
@@ -26,7 +26,7 @@ export default function Navbar() {
             <>
               <div
                 onClick={() => setIsOpen(false)}
-                className="absolute inset-0 bg-black/30"
+                className="absolute h-screen w-screen left-0 top-0 bg-black/50"
               ></div>
               <div className="absolute top-0 right-0 w-[200px] bg-background h-screen p-5 shadow-md">
                 <div className="flex justify-end">
@@ -39,38 +39,32 @@ export default function Navbar() {
                   </Button>
                 </div>
                 <nav className="flex flex-col gap-3 text-black">
-                  <Link href="/">
-                    <p className="font-extrabold">Home</p>
-                  </Link>
-                  <Link href="/">
-                    <p className="font-extrabold">About</p>
-                  </Link>
-                  <Link href="/">
-                    <p className="font-extrabold">Career</p>
-                  </Link>
-                  <Link href="/">
-                    <p className="font-extrabold">Get Involved</p>
-                  </Link>
+                  <MenuItem href="/" name="Home" />
+                  <MenuItem href="#about" name="About" />
+                  <MenuItem href="/" name="Career" />
+                  <MenuItem href="/" name="Get Involved" />
                 </nav>
               </div>
             </>
           )}
           <nav className="hidden sm:flex gap-6">
-            <Link href="/">
-              <p className="font-extrabold">Home</p>
-            </Link>
-            <Link href="#about">
-              <p className="font-extrabold">About</p>
-            </Link>
-            <Link href="/">
-              <p className="font-extrabold">Career</p>
-            </Link>
-            <Link href="/">
-              <p className="font-extrabold">Get Involved</p>
-            </Link>
+            <MenuItem href="/" name="Home" />
+            <MenuItem href="/#about" name="About" />
+            <MenuItem href="/" name="Career" />
+            <MenuItem href="/" name="Get Involved" />
           </nav>
         </div>
       </div>
     </>
   );
 }
+
+const MenuItem = ({ href, name }) => {
+  return (
+    <button className="w-fit" onClick={() => setIsOpen(false)}>
+      <Link href={href}>
+        <p className="font-extrabold">{name}</p>
+      </Link>
+    </button>
+  );
+};
