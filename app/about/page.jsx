@@ -15,8 +15,8 @@ export default function About() {
           full controlled production processing and marketing value-added
           agri-fishery products)
           <br />
-          <R>C</R>-ultural-sensitive governance, Care for God’s creation and
-          divine love and respect for Camnortenyo (Environmental friendly
+          <R>C</R>-ultural-sensitive governance, Care for God&apos;s creation
+          and divine love and respect for Camnortenyo (Environmental friendly
           projects, Moral Recovery Program, servant-leadership &
           no-bully/cursing/child-like kind of leaders and peoples)
           <br /> <R>K</R>- nowledge and aware Camnortenyo (Accountability and

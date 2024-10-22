@@ -8,7 +8,6 @@ export default function Home() {
     <div>
       <HeroSection />
       <AboutSection />
-      <div>asd</div>
     </div>
   );
 }
