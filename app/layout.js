@@ -25,17 +25,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        // style={{
-        //   backgroundImage: `url(${bg.src})`,
-        //   backgroundSize: "cover",
-        //   backgroundRepeat: "no-repeat",
-        //   height: "100vh",
-        //   filter: "saturate(0)",
-        // }}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
         <div className="fixed overflow-hidden w-screen h-screen z-[-1] saturate-50 brightness-90">
-          <Image src={bg} alt="Cover Image" className="object-cover" fill />
+          <Image
+            src={bg}
+            alt="Cover Image"
+            className="object-cover pointer-events-none"
+            fill
+          />
         </div>
         <Navbar />
         {children}

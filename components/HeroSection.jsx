@@ -23,10 +23,10 @@ const Hero = () => {
         </h1>
         <div className="bg-black/20 w-fit p-2 rounded-md">
           <p className="max-w-2xl text-background md:text-[2vw] lg:text-xl backdrop-blur-sm">
-            Welcome to the official campaign site of [Candidate’s Name]. With a
-            passion for public service and a commitment to positive change,
-            [Candidate] is dedicated to addressing the needs of our community.
-            Join us on this journey to bring about meaningful progress.
+            Welcome to the official campaign site of Elmer Panotes Alberto. With
+            a passion for public service and a commitment to positive change,
+            Elmer is dedicated to addressing the needs of our community. Join us
+            on this journey to bring about meaningful progress.
           </p>
         </div>
         {/* <div className="mt-6 flex flex-col gap-4 sm:flex-row lg:mt-10">
