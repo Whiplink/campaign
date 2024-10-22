@@ -1,5 +1,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import bg from "@/public/bg.webp";
+import Image from "next/image";
+import Footer from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,8 +26,20 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // style={{
+        //   backgroundImage: `url(${bg.src})`,
+        //   backgroundSize: "cover",
+        //   backgroundRepeat: "no-repeat",
+        //   height: "100vh",
+        //   filter: "saturate(0)",
+        // }}
       >
+        <div className="fixed overflow-hidden w-screen h-screen z-[-1] saturate-50 brightness-90">
+          <Image src={bg} alt="Cover Image" className="object-cover" fill />
+        </div>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
