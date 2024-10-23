@@ -22,8 +22,8 @@ export default function Navbar() {
   return (
     <>
       {/* <div className="fixed top-0 left-0 right-0 h-[70px] bg-gradient-to-b from-black/20 z-[9]" /> */}
-      <div className="fixed w-full text-white z-[10]">
-        <div className="flex bg-black/30 backdrop-blur shadow justify-between items-center py-4 px-4 md:px-6 max-w-7xl mx-auto">
+      <div className="fixed w-full text-white z-[10] bg-black/30 backdrop-blur shadow">
+        <div className="flex  justify-between items-center py-4 px-4 md:px-6 max-w-7xl mx-auto">
           <h1 className="font-extrabold text-xl tracking-tighter">
             Elmer Panotes Alberto
           </h1>

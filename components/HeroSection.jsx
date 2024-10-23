@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="pt-56 py-32 px-4 md:px-6">
+    <section className="pt-56 py-56 px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
         <Badge
           variant="outline"

@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="fixed overflow-hidden w-screen h-screen z-[-1] saturate-50 brightness-90">
           <Image
